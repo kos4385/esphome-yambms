@@ -29,6 +29,11 @@ substitutions:
   # canbus_esp32_can
   tx_pin_4: '5'
   rx_pin_4: '4'
+  # canbus_mcp2515
+  mcp2515_cs_pin: '10'
+  spi_mosi_pin: '11'
+  spi_clk_pin: '12'
+  spi_miso_pin: '13'
   # talk_pin
   talk_pin: '8' # ESP32: 4, ESP32-S3: 8, ESP32-C3: 10
   # LED
@@ -41,6 +46,8 @@ packages:
 
 esp32:
   variant: esp32s3
+  flash_size: 4MB # ajust according to your ESP32-S3 version
+  cpu_frequency: 240MHz
   framework:
     type: esp-idf
 
