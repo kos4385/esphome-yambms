@@ -56,11 +56,9 @@ esphome:
     board_build.flash_mode: dio # use Dual IO (dio) instead of Quad IO (qio) to prevent boot loop after flashing
 
 wifi:
-  id: my_network
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
-  domain: !secret domain
-  reboot_timeout: 0s
+  ap:
+    ssid: "YamBMS-Fallback"
+    password: "12345678"
 
 logger:
   baud_rate: 0 # frees the 3rd UART and avoids some bugs like "WK2168 with canbus" or "BLE client with RS485 modbus"
