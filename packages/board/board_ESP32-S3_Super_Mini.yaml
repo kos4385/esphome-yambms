@@ -24,17 +24,11 @@ substitutions:
   board_name: "Super Mini"
   # Interfaces GPIOs
   # uart_esp_1
-  tx_pin_1: '1'
-  rx_pin_1: '2'
-  # uart_esp_2
-  tx_pin_2: '3'
-  rx_pin_2: '4'
-  # uart_esp_3
-  tx_pin_3: '5'
-  rx_pin_3: '6'
+  tx_pin_1: '7'
+  rx_pin_1: '6'
   # canbus_esp32_can
   tx_pin_4: '5'
-  rx_pin_4: '6'
+  rx_pin_4: '4'
   # canbus_mcp2515
   mcp2515_cs_pin: '10'
   spi_mosi_pin: '11'
